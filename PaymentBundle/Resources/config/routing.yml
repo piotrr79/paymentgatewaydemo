@@ -1,0 +1,11 @@
+websolutio_payment_payment:
+    resource: "@WebsolutioPaymentBundle/Resources/config/routing/payment.yml"
+    prefix:   /payment
+
+websolutio_payment_api:
+    path:     /payment/api-rsponse
+    defaults: { _controller: "WebsolutioPaymentBundle:Api:apiresponse" }
+    
+websolutio_payment_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: WebsolutioPaymentBundle:Default:index }

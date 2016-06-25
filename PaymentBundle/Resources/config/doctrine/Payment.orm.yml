@@ -1,0 +1,52 @@
+# src/Websolutio/PaymentBundle/Resources/config/doctrine/Payment.orm.yml
+Websolutio\PaymentBundle\Entity\Payment:
+    type:  entity
+    table: payment
+    id:
+      id:
+        type: integer
+        generator: { strategy: AUTO }
+    fields:
+      name:
+        type: string
+        length: 255
+        nullable: true
+      surname:
+        type: string
+        length: 255
+        nullable: true   
+      ipaddress:
+        type: string
+        length: 255
+        nullable: true
+      ammount:
+        type: string
+        length: 255
+        nullable: true
+      currency:
+        type: string
+        length: 255
+        nullable: true
+      cardnumber:
+        type: string
+        length: 255
+        nullable: true
+      cardtype:
+        type: string
+        length: 255
+        nullable: true
+      expirationmonth:
+        type: string
+        length: 255
+        nullable: true
+      expirationyear:
+        type: string
+        length: 255
+        nullable: true
+      status:
+        type: boolean
+        nullable: true
+      apiresultcode:
+        type: string
+        length: 255
+        nullable: true

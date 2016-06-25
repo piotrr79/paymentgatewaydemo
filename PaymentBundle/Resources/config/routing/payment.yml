@@ -1,0 +1,9 @@
+payment_new:
+    path:     /new
+    defaults: { _controller: "WebsolutioPaymentBundle:Payment:new" }
+
+payment_create:
+    path:     /create
+    defaults: { _controller: "WebsolutioPaymentBundle:Payment:create" }
+    methods:  POST
+
